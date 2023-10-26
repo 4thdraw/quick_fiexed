@@ -1,0 +1,53 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .familywrap {
+  position: relative;
+  border: 1px solid #222;
+}
+body .familywrap:hover button:after {
+  content: "-";
+}
+body .familywrap:hover .family {
+  display: block;
+}
+body .familywrap button {
+  background-color: white;
+  position: relative;
+  padding: 2rem 4rem;
+  border-radius: 4rem;
+  font-size: 1.8rem;
+  letter-spacing: -0.085em;
+}
+body .familywrap button:after {
+  content: "+";
+  position: absolute;
+  right: 2rem;
+  font-size: 1.2em;
+}
+body .familywrap .family {
+  border: 1px solid #222;
+  position: absolute;
+  background-color: white;
+  bottom: calc(100% - 1px);
+  left: 0;
+  width: 100%;
+  border-radius: 4rem;
+  overflow: hidden;
+  text-indent: 5rem;
+  padding: 2rem 0;
+  display: none;
+}
+body .familywrap .family ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+body .familywrap .family ul li a {
+  color: black;
+  text-decoration: none;
+}
